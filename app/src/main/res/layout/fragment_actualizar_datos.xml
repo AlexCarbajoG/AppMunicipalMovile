@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.ActualizarDatosFragment">
+
+    <TextView
+        android:id="@+id/tvIdUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ID: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtactualizar" />
+
+    <TextView
+        android:id="@+id/txtactualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/tltactualziatusdatos"
+        android:textColor="@color/letraazul"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/acttelefono"
+        android:layout_width="338dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/acttelefono"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actdireccion"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/actapellido"
+        android:layout_width="338dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/actapellido"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actnombre"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/actdireccion"
+        android:layout_width="338dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/actdireccion"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actapellido"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/actnombre"
+        android:layout_width="338dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/actnombre"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvIdUsuario"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/actemail"
+        android:layout_width="338dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/actemail"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acttelefono"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_actualizarDatos"
+        android:layout_width="145dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/letraazul"
+        android:text="@string/btnactu"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actemail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

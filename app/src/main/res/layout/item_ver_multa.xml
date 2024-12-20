@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="526dp"
+    app:cardBackgroundColor="@color/material_dynamic_neutral90"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="526dp">
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:text="fecha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txthoramulta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="30dp"
+            android:text="hora multa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.894"
+            app:layout_constraintStart_toEndOf="@+id/txtFecha"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtlugarmulta"
+            android:layout_width="340dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="lugarmulta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
+
+        <TextView
+            android:id="@+id/txtdistrito"
+            android:layout_width="340dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="distrito"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtlugarmulta" />
+
+        <TextView
+            android:id="@+id/txtplaca"
+            android:layout_width="154dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="placa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtdistrito" />
+
+        <TextView
+            android:id="@+id/txtmarcavehiculo"
+            android:layout_width="154dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="marca"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.813"
+            app:layout_constraintStart_toEndOf="@+id/txtplaca"
+            app:layout_constraintTop_toBottomOf="@+id/txtdistrito" />
+
+        <TextView
+            android:id="@+id/txtmodelo"
+            android:layout_width="154dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="modelo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtplaca" />
+
+        <TextView
+            android:id="@+id/txtestado"
+            android:layout_width="154dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="estado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtmodelo" />
+
+        <TextView
+            android:id="@+id/txtcolor"
+            android:layout_width="154dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.813"
+            app:layout_constraintStart_toEndOf="@+id/txtmodelo"
+            app:layout_constraintTop_toBottomOf="@+id/txtmarcavehiculo" />
+
+        <TextView
+            android:id="@+id/txtañovehiculo"
+            android:layout_width="154dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="año"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.813"
+            app:layout_constraintStart_toEndOf="@+id/txtestado"
+            app:layout_constraintTop_toBottomOf="@+id/txtcolor" />
+
+        <TextView
+            android:id="@+id/txtpropietario"
+            android:layout_width="340dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="30dp"
+            android:text="propietario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtestado" />
+
+        <TextView
+            android:id="@+id/txttelefonomulta"
+            android:layout_width="340dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="telefono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtpropietario" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="340dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="observaciones"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txttelefonomulta" />
+
+        <TextView
+            android:id="@+id/txttotal"
+            android:layout_width="154dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Total a Pagar :"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/txtmontomulta"
+            android:layout_width="154dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="monto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.813"
+            app:layout_constraintStart_toEndOf="@+id/txttotal"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/txtverestado"
+            android:layout_width="154dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Estado de la Multa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txttotal" />
+
+        <TextView
+            android:id="@+id/txtestpago"
+            android:layout_width="154dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="estado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.813"
+            app:layout_constraintStart_toEndOf="@+id/txtverestado"
+            app:layout_constraintTop_toBottomOf="@+id/txtmontomulta" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
